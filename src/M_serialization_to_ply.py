@@ -6,6 +6,7 @@ from plyfile import PlyData, PlyElement
 def serialization_to_ply(source: np.ndarray):
     if not source.dtype == [('x', 'i4'), ('y', 'i4'), ('z', 'i4'), ('label', 'f4'), ('pixel_x', 'f4'),
                             ('pixel_y', 'f4')] :
+        #对于不完整的ply进行填充
         if len(source[0]) == 3:
             sidearray = [(np.nan, np.nan, np.nan)] * len(source)
             source = np.hstack((source, sidearray))
