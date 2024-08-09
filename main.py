@@ -1,6 +1,7 @@
 import cv2
 
 from src import *
+
 label = 11
 
 # file = 'E:/Cloud/realpoint2/under.ply'
@@ -13,10 +14,6 @@ label = 11
 # plydata = set_label(plydata, label)
 #
 # plydata.write(destfile)
-
-# file0 = 'data/des.ply'
-# file1 = 'data/under.ply'
-# fuse_ply_des(file0, file1)
 
 
 # extract_label_dest(file0,0)

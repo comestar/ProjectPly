@@ -5,7 +5,7 @@ from plyfile import PlyData
 from .M_serialization_to_ply import serialization_to_ply
 
 
-def extract_label_dest(file, ilabel: int, desfile = 'data/dest.ply'):
+def extract_label_dest(file, ilabel: int, desfile='data/dest.ply'):
     #默认分割后存储到data/dest.ply文件
     plydata = PlyData.read(file)
     ser_source = np.array(

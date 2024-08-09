@@ -2,6 +2,7 @@ import numpy as np
 
 from plyfile import PlyData
 
+
 def fuse_ply_des(file0, file1, desfile='data/des.ply'):
     plydata1 = PlyData.read(file1)
     plydata0 = PlyData.read(file0)
